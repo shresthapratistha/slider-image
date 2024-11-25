@@ -1,0 +1,83 @@
+/* Navbar Styling */
+.navbar {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    color: whitesmoke;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    width: 300px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.search-bar button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.search-bar button:hover {
+    background-color: #555;
+}
+
+.search-bar button i {
+    font-size: 1rem;
+}
+
+.navbar-links {
+    margin-left: 20px;
+}
+
+.home-button {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #007bff; /* Blue background */
+    margin-right: 15px;
+}
+
+.home-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
