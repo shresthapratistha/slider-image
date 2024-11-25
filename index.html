@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Awesomw CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Add event listener to each Read More button
+document.querySelectorAll(".btn").forEach(function(button) {
+   button.addEventListener("click", function() {
+       // Find the parent .item element that contains the button
+       var item = button.closest(".item");
+
+       // Find the invisible content within the .item element
+       var invisibleContent = item.querySelector(".invisible-content");
+       
+       // Toggle the visibility of the .invisible-content
+       if (invisibleContent.style.display === "none" || invisibleContent.style.display === "") {
+           invisibleContent.style.display = "block"; // Show the content
+           button.textContent = "Read Less"; // Optionally change button text to "Read Less"
+       } else {
+           invisibleContent.style.display = "none"; // Hide the content
+           button.textContent = "Read More"; // Optionally change button text back to "Read More"
+       }
+   });
+});
+   </script>
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">Adventure Ally</div>
+
+            <a href="index.html" class="home-icon" style="margin-right: 15px;">
+                <i class="fa fa-home" style="color: aliceblue;"></i>
+            </a>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search..." id="search-input" class="form-control mr-sm-2">
+                <button id="search-button"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="slide">
+            <div class="item" style="background-image: url(./images/afghanistan.jpg);">
+            <div class="content">
+                <div class="name">Afghanistan</div>
+                <div class="des"><p>Afghanistan, officially the Islamic Emirate of Afghanistan,is a landlocked country located at the crossroads of Central Asia and South Asia. It is bordered by Pakistan to the east and south,Iran to the west, Turkmenistan to the northwest, Uzbekistan to the north, Tajikistan to the northeast, and China to the northeast and east. Occupying 652,864 square kilometers (252,072 sq mi) of land, the country is predominantly mountainous with plains in the north and the southwest, which are separated by the Hindu Kush mountain range. Kabul is the country's capital and largest city. According to the World Population review, as of 2023, Afghanistan's population is 43 million.
+                    
+                    Etymology</p></div>
+                
+                    <button id="btn">Read More
+                    </button>
+            </div>
+            </div>
+            <div class="item" style="background-image: url(./images/bangladesh.jpg);">
+                <div class="content">
+                    <div class="name">Bangladesh</div>
+                    <div class="des">Bangladesh, officially the People's Republic of Bangladesh, is a country in South Asia. It is the eighth-most populous country in the world and seventh most densely populated with a population of 173,562,364 in an area of 148,460 square kilometres (57,320 sq mi). Bangladesh shares land borders with India to the north, west, and east, and Myanmar to the southeast. To the south, it has a coastline along the Bay of Bengal. To the north, it is separated from Bhutan and Nepal by the Siliguri Corridor, and from China by the mountainous Indian state of Sikkim. Dhaka, the capital and largest city, is the nation's political, financial, and cultural centre. Chittagong is the second-largest city and the busiest port. The official language is Bengali, with Bangladeshi English also used in government.</div>
+                        <button id="btn">Read More</button>
+                </div>
+                </div>
+                <div class="item" style="background-image: url(./images/bhutan.jpg);">
+                    <div class="content">
+                        <div class="name">Bhutan</div>
+                        <div class="des">Bhutan,officially the Kingdom of Bhutan,is a landlocked country in South Asia situated in the Eastern Himalayas between China in the north and India in the south, with the Indian state of Sikkim separating it from neighbouring Nepal. With a population of over 727,145[15] and a territory of 38,394 square kilometres (14,824 sq mi), Bhutan ranks 133rd in land area and 160th in population. Bhutan is a constitutional monarchy with a king as the head of state and a prime minister as the head of government. The Je Khenpo is the head of the state religion, Vajrayana Buddhism.
+
+                            The subalpine Himalayan mountains in the north rise from the country's lush subtropical plains in the south.In the Bhutanese Himalayas, there are peaks higher than 7,000 metres (23,000 ft) above sea level.</div>
+                            <button id="btn">Read More</button>
+                    </div>
+                    </div>
+                    <div class="item" style="background-image: url(./images/india.jpg);">
+                        <div class="content">
+                            <div class="name">India</div>
+                            <div class="des">India, officially the Republic of India,is a country in South Asia. It is the seventh-largest country in the world by area and the most populous country. Bounded by the Indian Ocean on the south, the Arabian Sea on the southwest, and the Bay of Bengal on the southeast, it shares land borders with Pakistan to the west;[k] China, Nepal, and Bhutan to the north; and Bangladesh and Myanmar to the east. In the Indian Ocean, India is in the vicinity of Sri Lanka and the Maldives; its Andaman and Nicobar Islands share a maritime border with Thailand, Myanmar, and Indonesia.
+
+                                Modern humans arrived on the Indian subcontinent from Africa no later than 55,000 years ago.</div>
+                                <button id="btn">Read More</button>
+                        </div>
+                        </div>
+                        <div class="item" style="background-image: url(./images/maldives.jpg);">
+                            <div class="content">
+                                <div class="name">Maldives</div>
+                                <div class="des">The Maldives,officially the Republic of Maldives,and historically known as the Maldive Islands, is a country and archipelagic state in South Asia in the Indian Ocean. The Maldives is southwest of Sri Lanka and India, about 750 kilometres (470 miles; 400 nautical miles) from the Asian continent's mainland. The Maldives' chain of 26 atolls stretches across the equator from Ihavandhippolhu Atoll in the north to Addu Atoll in the south.
+
+                                    The Maldives is the smallest country in Asia. Including the sea, the territory spans roughly 90,000 square kilometres (35,000 sq mi), with a land area of 298 square kilometres (115 sq mi). The Maldives is one of the world's most geographically dispersed sovereign states, and the smallest Muslim country by land area. </div>
+                                    <button id="btn">Read More</button>
+                            </div>
+                            </div>
+                            <div class="item" style="background-image: url(./images/nepal.jpg);">
+                                <div class="content">
+                                    <div class="name">Nepal</div>
+                                    <div class="des">Nepal,officially the Federal Democratic Republic of Nepal,is a landlocked country in South Asia. It is mainly situated in the Himalayas, but also includes parts of the Indo-Gangetic Plain. It borders the Tibet Autonomous Region of China to the north, and India to the south, east, and west, while it is narrowly separated from Bangladesh by the Siliguri Corridor, and from Bhutan by the Indian state of Sikkim. Nepal has a diverse geography, including fertile plains, subalpine forested hills, and eight of the world's ten tallest mountains, including Mount Everest, the highest point on Earth. Kathmandu is the nation's capital and the largest city. Nepal is a multi-ethnic, multi-lingual, multi-religious and multi-cultural state, with Nepali as the official language.</div>
+                                        <button id="btn">Read More</button>
+                                </div>
+                                </div>
+                                <div class="item" style="background-image: url(./images/pakistan.jpg);">
+                                    <div class="content">
+                                        <div class="name">Pakistan</div>
+                                        <div class="des">Pakistan,officially the Islamic Republic of Pakistan,is a country in South Asia. It is the fifth-most populous country, with a population of over 241.5 million,having the second-largest Muslim population as of 2023. Islamabad is the nation's capital, while Karachi is its largest city and financial centre. Pakistan is the 33rd-largest country by area. Bounded by the Arabian Sea on the south, the Gulf of Oman on the southwest, and the Sir Creek on the southeast, it shares land borders with India to the east; Afghanistan to the west; Iran to the southwest; and China to the northeast. It shares a maritime border with Oman in the Gulf of Oman, and is separated from Tajikistan in the northwest by Afghanistan's narrow Wakhan Corridor.</div>
+                                            <button id="btn">Read More</button>
+                                    </div>
+                                    </div>
+                                    <div class="item" style="background-image: url(./images/srilanka.jpg);">
+                                        <div class="content">
+                                            <div class="name">Srilanka</div>
+                                            <div class="des">Sri Lanka,historically known as Ceylon,and officially the Democratic Socialist Republic of Sri Lanka, is an island country in South Asia. It lies in the Indian Ocean, southwest of the Bay of Bengal, separated from the Indian peninsula by the Gulf of Mannar and the Palk Strait. It shares a maritime border with the Maldives in the southwest and India in the northwest.
+
+                                                Sri Lanka has a population of approximately 22 million and is home to several cultures, languages and ethnicities. The Sinhalese people form the majority of the population, followed by the Sri Lankan Tamils, who are the largest minority group and are concentrated in northern Sri Lanka; both groups have played an influential role in the island's history. </div>
+                                                <button id="btn">Read More</button>
+                                        </div>
+                                        </div>
+        </div>
+        <div class="button">
+         <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+         <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script  type="text/javascript" src="app.js"></script>
+    
+</body>
+</html>
+
